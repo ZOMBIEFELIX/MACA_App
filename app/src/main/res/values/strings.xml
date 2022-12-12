@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MACA_Snacks</string>
+
+    <string name="text_bienvenido">BIENVENIDO</string>
+    <string name="btn_text_menu">MENU</string>
+    <string name="btn_text_entrega_domicilio">ENTREGA_DOMICILIO</string>
+</resources>
