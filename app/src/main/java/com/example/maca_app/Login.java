@@ -95,7 +95,7 @@ public class Login extends AppCompatActivity {
         cancela=findViewById(R.id.cancelar);
         mostrar=findViewById(R.id.resultado);
         }
-        public void setSuma (View V)
+        public void calcularcuenta (View V)
         {
             Double totalf=0.0;
             if(entregar.isChecked())
@@ -141,7 +141,7 @@ public class Login extends AppCompatActivity {
             }
 
 
-        public void setCancela(View V)
+        public void cancelarorden(View V)
         {
             entregar.setChecked(false);
             checkbox_Sopa.setChecked(false);

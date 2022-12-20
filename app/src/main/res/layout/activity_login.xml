@@ -353,7 +353,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Resultado"
-                    android:textSize="20dp"
+                    android:textSize="40dp"
                     />
 
 
