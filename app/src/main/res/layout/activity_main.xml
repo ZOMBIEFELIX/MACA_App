@@ -10,15 +10,37 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:src="@drawable/logo_maca_2"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_maca_2" />
+
+    <TextView
+        android:id="@+id/bienvenidoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a MACA"
+        android:layout_marginTop="28dp"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:transitionName="textTrans"
         />
+
+    <TextView
+        android:id="@+id/continuarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicia sesion para continuar"
+        android:textSize="24sp"
+        />
+
+
+
 
     <Button
         android:id="@+id/btnLogin"
         android:text="ENTRAR"
-        android:layout_marginTop="150dp"
+
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:backgroundTint="#F7819F"
