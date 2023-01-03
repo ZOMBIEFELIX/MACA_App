@@ -71,6 +71,18 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/olvidastecontra"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textSize="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="olvidaste tu contrasena?"
+            />
 
     </LinearLayout>
 
