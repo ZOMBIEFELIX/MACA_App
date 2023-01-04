@@ -9,117 +9,121 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/LoginImageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:src="@drawable/logo_maca_2"
-        />
-
-    <TextView
-        android:id="@+id/bienvenidoLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bienvenido a MACA"
-        android:layout_marginTop="28dp"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        android:transitionName="textTrans"
-        />
-
-    <TextView
-        android:id="@+id/continuarLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Inicia sesion para continuar"
-        android:textSize="24sp"
-        />
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginBottom="14dp"
-        android:orientation="vertical">
-        <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:id="@+id/usuarioTextfield"
-            android:hint="Email"
-            >
-            <com.google.android.material.textfield.TextInputEditText
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/LoginImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_maca_2" />
+
+            <TextView
+                android:id="@+id/bienvenidoLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Bienvenido a MACA"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:transitionName="textTrans" />
+
+            <TextView
+                android:id="@+id/continuarLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inicia sesion para continuar"
+                android:textSize="24sp" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:orientation="vertical">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:id="@+id/contrasenaTextfield"
-            android:hint="contrasena"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/usuarioTextfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:hint="Email">
 
-            >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contrasenaTextfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:hint="contrasena"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/olvidastecontra"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="olvidaste tu contrasena?"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="20dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/iniciaSesion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="70dp"
+                    android:text="INICIO" />
+
+                <Button
+                    android:id="@+id/nuevoUsuario"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#F7819F"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Eres nuevo? Registrate:"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:inputType="textPassword"
-                />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:id="@+id/olvidastecontra"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:textAlignment="textEnd"
-            android:textSize="20dp"
-            android:textColor="@android:color/darker_gray"
-            android:layout_gravity="end"
-            android:clickable="true"
-            android:focusable="true"
-            android:text="olvidaste tu contrasena?"
-            />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/iniciaSesion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="INICIO"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="70dp"/>
-
-        <TextView
-            android:id="@+id/nuevoUsuario"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="@android:color/darker_gray"
-
-            android:layout_gravity="center"
-            android:clickable="true"
-            android:focusable="true"
-            android:textStyle="bold"
-            android:text="Eres nuevo? Registrate:" />
-
-
-    </LinearLayout>
-
-
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
-        android:backgroundTint="#F7819F"
-        android:text="ENTRAR" />
-
+                android:layout_gravity="center"
+                android:backgroundTint="#F7819F"
+                android:text="ENTRAR" />
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

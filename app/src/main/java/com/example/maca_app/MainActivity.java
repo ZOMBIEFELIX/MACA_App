@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     MaterialButton inicioSesion;
 
     private Button Login;
+    private Button nuevo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         Login = findViewById(R.id.btnLogin);
+        nuevo= findViewById(R.id.nuevoUsuario);
 
         LoginImageView= findViewById(R.id.LoginImageView);
         bienvenidoLabel = findViewById(R.id.bienvenidoLabel);
@@ -43,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
             }
         });
+
+        nuevo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),SignUpActivity.class));
+            }
+        });
+
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
