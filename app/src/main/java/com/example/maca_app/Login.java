@@ -4,6 +4,7 @@ import static com.example.maca_app.R.id.emailEditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.google.android.material.button.MaterialButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -51,7 +53,6 @@ public class Login extends AppCompatActivity {
     private Button cancela;
     private TextView mostrar;
     private EditText mensaje;
-
 
 
     @Override
@@ -105,6 +106,7 @@ public class Login extends AppCompatActivity {
         mostrar=findViewById(R.id.resultado);
 
         mensaje=findViewById(R.id.texto);
+
 
 
 
@@ -177,5 +179,8 @@ public class Login extends AppCompatActivity {
             mostrar.setText("Total=0");
 
         }
+
+
+
 
     }

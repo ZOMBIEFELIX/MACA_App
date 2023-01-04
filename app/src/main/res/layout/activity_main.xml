@@ -32,8 +32,9 @@
                 android:layout_marginTop="28dp"
                 android:text="Bienvenido a MACA"
                 android:textSize="45sp"
-                android:textStyle="bold"
-                android:transitionName="textTrans" />
+                android:textStyle="bold"/>
+                <!--android:transitionName="textTrans"-->
+
 
             <TextView
                 android:id="@+id/continuarLabel"
@@ -57,7 +58,7 @@
                     android:hint="Email">
 
                     <com.google.android.material.textfield.TextInputEditText
-
+                        android:id="@+id/emailEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </com.google.android.material.textfield.TextInputLayout>

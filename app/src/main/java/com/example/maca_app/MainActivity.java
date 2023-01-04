@@ -50,22 +50,25 @@ public class MainActivity extends AppCompatActivity {
         usuarioTextfield = findViewById(R.id.usuarioTextfield);
         contrasenaTextField = findViewById(R.id.contrasenaTextfield);
         inicioSesion = findViewById(R.id.iniciaSesion);
-        nuevoUsuario = findViewById(R.id.nuevoUsuario);emailEditText = findViewById(R.id.usuarioTextfield);
-        passwordEditText = findViewById(R.id.contrasenaTextfield);
+        nuevoUsuario = findViewById(R.id.nuevoUsuario);
+
+        //emailEditText = findViewById(R.id.emailEditText);
+
+        //passwordEditText = findViewById(R.id.passwordEditText);
 
         mAtuh = FirebaseAuth.getInstance();
 
 
         nuevoUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
             }
         });
 
         nuevo.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),SignUpActivity.class));
             }
         });
@@ -73,14 +76,14 @@ public class MainActivity extends AppCompatActivity {
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),Login.class));
             }
         });
 
         inicioSesion.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 validate();
 
             }
