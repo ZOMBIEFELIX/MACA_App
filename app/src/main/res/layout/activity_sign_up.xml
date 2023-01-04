@@ -117,7 +117,7 @@
                     android:layout_gravity="center"
                     android:text="Ya tienes una cuenta? Inicia sesion"
                     android:textAlignment="center"
-                    android:textColor="@android:color/darker_gray"
+                    android:textColor="@android:color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:transitionName="newUserTrans" />

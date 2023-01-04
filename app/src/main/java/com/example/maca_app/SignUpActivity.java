@@ -34,7 +34,7 @@ public class SignUpActivity extends AppCompatActivity {
        nuevoUsuario.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               transitionBack();
+               startActivity(new Intent(getApplicationContext(),MainActivity.class));
            }
        });
 
