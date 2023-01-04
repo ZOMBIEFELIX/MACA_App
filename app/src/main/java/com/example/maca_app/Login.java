@@ -1,5 +1,7 @@
 package com.example.maca_app;
 
+import static com.example.maca_app.R.id.emailEditText;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -10,6 +12,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity {
 
@@ -46,6 +51,8 @@ public class Login extends AppCompatActivity {
     private Button cancela;
     private TextView mostrar;
     private EditText mensaje;
+    TextView emailTextView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,6 +105,14 @@ public class Login extends AppCompatActivity {
         mostrar=findViewById(R.id.resultado);
 
         mensaje=findViewById(R.id.texto);
+        emailTextView=findViewById(R.id.emailEditText);
+
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            emailTextView.setText(user.getEmail());
+        }
+
         }
         public void calcularcuenta (View V)
         {
@@ -140,6 +155,7 @@ public class Login extends AppCompatActivity {
 
             if(preciocola.isChecked())
                 totalf=totalf+19;
+
 
                 mensaje.setText("Total: "+totalf);
             }
