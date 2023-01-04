@@ -51,7 +51,7 @@ public class Login extends AppCompatActivity {
     private Button cancela;
     private TextView mostrar;
     private EditText mensaje;
-    TextView emailTextView;
+
 
 
     @Override
@@ -105,13 +105,10 @@ public class Login extends AppCompatActivity {
         mostrar=findViewById(R.id.resultado);
 
         mensaje=findViewById(R.id.texto);
-        emailTextView=findViewById(R.id.emailEditText);
 
 
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        if (user != null) {
-            emailTextView.setText(user.getEmail());
-        }
+
+
 
         }
         public void calcularcuenta (View V)

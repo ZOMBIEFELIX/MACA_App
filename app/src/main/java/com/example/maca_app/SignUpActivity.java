@@ -43,28 +43,28 @@ public class SignUpActivity extends AppCompatActivity {
         contrasenaTextField = findViewById(R.id.contrasenaTextfield);
         inicioSesion = findViewById(R.id.inicioSesion);
         nuevoUsuario = findViewById(R.id.nuevoUsuario);
-        emailEditText=findViewById(R.id.emailEditText);
-        passwordEditText=findViewById(R.id.emailEditText);
-        confirmPasswordEditText=findViewById(R.id.confirmPasswordEditText);
+        emailEditText = findViewById(R.id.emailEditText);
+        passwordEditText = findViewById(R.id.emailEditText);
+        confirmPasswordEditText = findViewById(R.id.confirmPasswordEditText);
 
 
-        inicioSesion.setOnClickListener(new View.OnClickListener(){
+        inicioSesion.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 validate();
             }
         });
 
-        mAuth=FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
         nuevoUsuario.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               startActivity(new Intent(getApplicationContext(),MainActivity.class));
-           }
-       });
-
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            }
+        });
     }
+
 
     public void validate(){
         String email=emailEditText.getText().toString().trim();
@@ -108,15 +108,18 @@ public class SignUpActivity extends AppCompatActivity {
                         } else {
                             Toast.makeText(SignUpActivity.this, "Fallo en registrarse", Toast.LENGTH_LONG).show();
                         }
+
+
                     }
-
-
                 });
+
+
     }
-    @Override
-    public void onBackPressed(){
-        transitionBack();
-    }
+
+        @Override
+        public void onBackPressed(){
+            transitionBack();
+        }
 
     public void transitionBack(){
         Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
