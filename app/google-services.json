@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "72958615989",
+    "firebase_url": "https://apiapp-a23f9-default-rtdb.firebaseio.com",
+    "project_id": "apiapp-a23f9",
+    "storage_bucket": "apiapp-a23f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72958615989:android:7778be82182de30053f9fc",
+        "android_client_info": {
+          "package_name": "com.example.maca_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72958615989-llv897odee1ov53qkk5ppdq1qick3e5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD381t8BM8VKAS3zKRPrZhxufMP3Fgka5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72958615989-llv897odee1ov53qkk5ppdq1qick3e5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

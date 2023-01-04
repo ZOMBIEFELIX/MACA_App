@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -44,6 +45,7 @@ public class Login extends AppCompatActivity {
     private Button suma;
     private Button cancela;
     private TextView mostrar;
+    private EditText mensaje;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +96,8 @@ public class Login extends AppCompatActivity {
         suma=findViewById(R.id.operacion);
         cancela=findViewById(R.id.cancelar);
         mostrar=findViewById(R.id.resultado);
+
+        mensaje=findViewById(R.id.texto);
         }
         public void calcularcuenta (View V)
         {
@@ -137,7 +141,7 @@ public class Login extends AppCompatActivity {
             if(preciocola.isChecked())
                 totalf=totalf+19;
 
-                mostrar.setText("Total: "+totalf);
+                mensaje.setText("Total: "+totalf);
             }
 
 
