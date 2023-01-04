@@ -90,7 +90,27 @@
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/inicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRAR"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:transitionName="buttonSignInTrans"/>
 
+        <TextView
+            android:id="@+id/nuevoUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Ya tienes una cuenta? Inicia sesion"
+            android:transitionName="newUserTrans"
+            />
 
     </LinearLayout>
 
