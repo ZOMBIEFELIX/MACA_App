@@ -10,10 +10,12 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/LoginImageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo_maca_2" />
+        android:src="@drawable/logo_maca_2"
+        />
 
     <TextView
         android:id="@+id/bienvenidoLabel"
